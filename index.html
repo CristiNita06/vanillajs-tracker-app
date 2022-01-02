@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker App</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/46b203e151.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">
+          <i class="fas fa-tasks"></i> TRACKER APP</h1>
+          <form id="tracker-form">
+            <div class="form-group">
+              <label for="task">TASK</label>
+              <input type="text" id="task" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="details">DETAILS</label>
+              <input type="text" id="details" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="date">DUE DATE</label>
+              <input type="date" id="date" class="form-control">
+            </div>
+            <input type="submit" value="Add Task" class="submit btn btn-success btn-block mt-2">
+          </form>
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>TASK</th>
+                <th>DETAILS</th>
+                <th>DUE DATE</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="task-table"></tbody>
+          </table>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
